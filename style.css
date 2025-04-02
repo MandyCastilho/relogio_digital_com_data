@@ -1,1 +1,80 @@
+@charset "UTF-8";
+
+:root {
+    --bg-color: #222;
+    --text-color: #fff;
+    --clock-border: #fff;
+    --hand-color: #fff;
+    --second-hand: #e74c3c;
+    --font-main: 'Inter', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    font-family: var(--font-main);
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Estiliza o relógio analógico */
+.clock {
+    width: 200px;
+    height: 200px;
+    border: 6px solid var(--clock-border);
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Estiliza os ponteiros */
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: var(--hand-color);
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(0deg);
+    transition: transform 0.5s cubic-bezier(0.4, 2.3, 0.3, 1);
+}
+
+.hour {
+    width: 30%;
+    height: 6px;
+    background-color: var(--hand-color);
+}
+
+.minute {
+    width: 40%;
+    height: 4px;
+    background-color: var(--hand-color);
+}
+
+.second {
+    width: 45%;
+    height: 2px;
+    background-color: var(--second-hand);
+}
+
+/* Exibe as horas digitais */
+.digital-clock {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+/* Exibe a data */
+.date {
+    font-size: 1.5em;
+    opacity: 0.8;
+}
 
