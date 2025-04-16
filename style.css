@@ -96,3 +96,31 @@ body {
     text-shadow: 0 0 5px var(--shadow);
 }
 
+
+/* Botão de alternância 12h/24h */
+.toggle-format {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--second-hand);
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--second-hand);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.toggle-format:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Tempo desde que a página foi aberta */
+.elapsed-time {
+    margin-top: 10px;
+    font-size: 1.2em;
+    opacity: 0.9;
+    text-shadow: 0 0 5px var(--shadow);
+}
+
