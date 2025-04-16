@@ -6,10 +6,10 @@
     <meta name="description" content="Um relógio digital moderno com exibição de data e horas em tempo real.">
     <meta name="keywords" content="relógio digital, relógio online, horas, data, tempo, relógio animado">
     <meta name="author" content="Amanda Ramos Castilho">
-    
+
     <link rel="icon" href="img/relogio.png" type="image/png">
     <link rel="stylesheet" href="style.css">
-    
+
     <title>Relógio Digital com Data</title>
 </head>
 
@@ -24,13 +24,28 @@
     <div class="digital-clock">00:00:00</div>
     <div class="date">Carregando data...</div>
     
-    <!-- NOVO: Botão para alternar formato 12h/24h -->
+    <!-- Botão para alternar formato 12h/24h -->
     <button class="toggle-format">Alternar 12h/24h</button>
 
-    <!-- NOVO: Tempo desde que a página foi aberta -->
+    <!-- Tempo desde que a página foi aberta -->
     <div class="elapsed-time">Tempo desde abertura: 00:00:00</div>
+
+    <!-- NOVOS ELEMENTOS -->
+
+    <!-- Diferença até horário definido (18h) -->
+    <div class="time-diff">Tempo até 18h: 00:00:00</div>
+
+    <!-- Fuso horário atual -->
+    <div class="timezone">Fuso horário: Carregando...</div>
+
+    <!-- Botão para resetar o timer -->
+    <button class="reset-timer">Resetar Timer</button>
+
+    <!-- Botão para definir alarme -->
+    <button class="set-alarm">Definir Alarme</button>
 
     <script src="js.js"></script>
 
 </body>
 </html>
+
