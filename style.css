@@ -124,3 +124,53 @@ body {
     text-shadow: 0 0 5px var(--shadow);
 }
 
+/* Tempo até 18h */
+.time-diff {
+    margin-top: 10px;
+    font-size: 1.2em;
+    opacity: 0.9;
+    text-shadow: 0 0 5px var(--shadow);
+}
+
+/* Fuso horário */
+.timezone {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #bbb;
+    font-style: italic;
+    text-shadow: 0 0 5px var(--shadow);
+}
+
+/* Botões extras */
+.reset-timer,
+.set-alarm {
+    margin-top: 12px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #2980b9;
+    color: var(--text-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.6);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.reset-timer:hover,
+.set-alarm:hover {
+    background-color: #1f6393;
+    transform: scale(1.05);
+}
+
+/* Modo noturno automático */
+.night-mode {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+}
+
+.night-mode .toggle-format,
+.night-mode .reset-timer,
+.night-mode .set-alarm {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+
