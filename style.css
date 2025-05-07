@@ -55,8 +55,8 @@ body {
     background-color: var(--hand-color);
     top: 50%;
     left: 50%;
-    transform-origin: 0%;
-    transform: translateX(-50%) rotate(0deg);
+    transform-origin: 0% 50%; /* gira a partir do centro da base esquerda */
+    transform: rotate(0deg);
     border-radius: 6px;
     box-shadow: 0 0 10px var(--shadow);
 }
